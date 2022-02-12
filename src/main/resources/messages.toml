@@ -1,0 +1,49 @@
+# If there is no message configured the message will
+# Each message can have a color assigned to it by adding -color after the message key and specifying one of the
+# NamedTextColor's found here: https://jd.adventure.kyori.net/api/4.7.0/net/kyori/adventure/text/format/NamedTextColor.html
+# or a hex color starting with #
+# Messages can have variables defined by {}
+nomessage="No Message Configured for key: \"{}\"" #message = message key used in configuration
+nomessage-color="#ff0000"
+suggestserver="/tpsrxserver {} <player>"
+playernotfound="That player was not found."
+playernotfound-color="red"
+myservernoserver="You do not have a server created. Use /myserver <template> to create a server from one of these templates: {}"
+myservernoserver-color="red"
+myserverinvalidtemplate="\"{}\" is not one of the valid templates: {}"
+myservercreatingserver="Creating your private server with template: {}"
+myserveralreadyconnected="You are already connected to your private server."
+myserveralreadyconnected-color="RED"
+myserverstarting="Starting your private server."
+visitusage="/visit <player>"
+visitsuggest="/visit {}" # suggests a player to visit when no argument specifi
+usernoserver="That player does not have a server created."
+visitnotonline="That player's server is not online."
+deletefilesusage="/tpsrxserver deletefiles <player> <template>"
+suggestcurrentserver="Did you mean the current server? {}" #command
+cannotconnect="Cannot connect you to that server, it probably has not started yet."
+alreadycreated="That server's container is already created."
+alreadyonline="That user's server is already online."
+alreadyoffline="That user's server is already offline."
+templatenotfound="That template was not found."
+usingtemplate="Using template: {}" # template
+creatingwithexistingdata="Creating server with existing data."
+servercreated="The server has been created successfully."
+serverstarting="Server starting, " # click to join button appended
+serverstopped="Server stopped."
+serverstopped-color="#ff0000"
+clicktojoin="click here to join."
+clicktojoin-color="blue"
+clicktostart="Click here to start the server."
+connecting="Sending you to the private server."
+deletingserver="Deleting private server."
+deletingserver-color="#00ff04"
+deletedwithoutfiles="Server deleted with all files still saved."
+deletedwithfiles="Server files deleted for template: {}."
+notemplate="That player does not have any data with that template."
+activeservernodelete="That user's server is still active, you cannot delete its files."
+sendingtofallback="Sending all players to one of {} fall back servers."
+nofallbackservers="There are no fallback servers available." # automatically bolded
+nofallbackservers-color="#ff0000"
+serverclosed="The private server you were connected to has closed."
+serverclosed-color="GREEN"

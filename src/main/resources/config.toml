@@ -1,0 +1,19 @@
+[docker]
+host = "tcp://localhost:2375"
+publicip = "0.0.0.0"
+tlsverify = false
+# certificatepath = "/home/user/.docker"
+defaultimage = "template1"
+images = ["template1", "template2"] #all images, INCLUDING THE DEFAULT IMAGE
+containerserverdir = '/usr/src/minecraft'
+internalport = 25565
+
+[servers]
+startoncreate=true
+fallbackservers = ['lobby1', 'lobby2'] # list of names of fallbacks servers to send players randomly to when stopping a private server (make sure these are online most of the time )
+timeoutinterval = 10 # interval (in minutes) to stop all servers with 0 players
+logstopped = true # log the stopped servers
+velocitynameformat = "pv-uuid"
+createbymyserver = true # if the /myserver command that normal players will be able to use should be able to create a server on its own on not.
+
+managecommandpermission = "tpsrxserver.manage"
